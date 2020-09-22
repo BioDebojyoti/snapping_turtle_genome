@@ -1,0 +1,17 @@
+<jellyProtocol>
+    <reference>/pylon5/tr4ifmp/pcddas/genome.fasta</reference>  
+    <outputDir>/pylon5/tr4ifmp/pcddas/</outputDir>
+    <cluster>
+        <command notes="For single node, multi-core machines" >${CMD} ${JOBNAME} 2> ${STDERR} 1> ${STDOUT} &amp;</command>
+        <nJobs>6</nJobs>
+    </cluster>
+    <blasr>-minMatch 12 -minPctIdentity 70 -bestn 1 -nCandidates 20 -maxScore -500 -nproc 42 -noSplitSubreads</blasr>
+    <input baseDir="/pylon5/tr4ifmp/pcddas/">
+         <job>two_step_corrected_63_3_subreads1.fastq</job>
+         <job>two_step_corrected_63_3_subreads2.fastq</job>
+         <job>two_step_corrected_63_3_subreads3.fastq</job>
+         <job>two_step_corrected_63_3_subreads4.fastq</job>
+         <job>two_step_corrected_63_3_subreads5.fastq</job>
+         <job>two_step_corrected_63_3_subreads6.fastq</job>
+    </input>
+</jellyProtocol>

@@ -1,0 +1,3 @@
+gmap_Cserpentina_assembly_CLC.gff3	clc	False	1
+gmap_Cserpentina_assembly_CufflinksTophat.gff3	cuff	False	-0.5
+gmap_Cserpentina_assembly_Trinity.gff3	tr	False	1
